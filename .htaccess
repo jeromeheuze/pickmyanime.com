@@ -1,0 +1,4 @@
+<Files "clicks.log">
+  Order allow,deny
+  Deny from all
+</Files>

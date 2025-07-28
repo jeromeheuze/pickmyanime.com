@@ -1,3 +1,8 @@
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Expires: Thu, 01 Jan 1970 00:00:00 GMT");
+header("Pragma: no-cache");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +10,7 @@
     <link rel="preload" as="image" href="/assets/img/pixlr-image-generator-6872d9e9175956f8cbdb3c10.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PickMyAnime – Mood-Based Anime Recommendations</title>
+    <link rel="canonical" href="https://pickmyanime.com/" />
     <meta name="description" content="Discover your next anime based on your mood or vibe. PickMyAnime helps you find the perfect anime to watch, instantly." />
     <meta property="og:title" content="PickMyAnime – Mood-Based Anime Recommendations" />
     <meta property="og:description" content="Find the perfect anime to match your mood. Whether you're feeling sad, happy, curious, or nostalgic, PickMyAnime will guide your next watch." />
@@ -13,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -130,25 +136,44 @@
 
         gtag('config', 'G-WFEVQE9XF8');
     </script>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="4akxeutEU3/U31uZrbCycQ" async></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "PickMyAnime",
+            "url": "https://pickmyanime.com",
+            "description": "Find the perfect anime to match your mood. Whether you're feeling nostalgic or curious, PickMyAnime helps you decide what to watch next.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "PickMyAnime"
+            }
+        }
+    </script>
 </head>
 <body style="background: radial-gradient(#222, #000);">
     <div class="image-wrapper">
         <img src="/assets/img/pixlr-image-generator-6872d9e9175956f8cbdb3c10.png"
-             alt="Anime Watching"
+             alt="Watch Anime Based on Your Mood"
              width="1024"
              height="768"
+             loading="lazy"
              style="width: 50%; height: auto; border-radius: 16px;" />
     </div>
     <h1>What Anime Should I Watch Next?</h1>
     <p>PickMyAnime helps you find the perfect anime to watch based on your mood, vibe, or genre preferences. Whether you're feeling nostalgic, hyped, or in the mood for something chill — we've got you.</p>
+
     <button id="exciteBtn" onclick="trackExcitement()">Yes, I’m excited!</button>
 
     <p id="confirmationMessage" class="fade-in" style="margin-top: 1rem; color: #00ff99; font-weight: bold;">
         🎉 Thanks for your excitement! We'll keep you updated.
     </p>
     <p id="excitementBadge" style="margin-top: 2rem; font-size: 1rem; color: #ffaa33;">
-        🔥 <span id="excitedCount">0</span> people are excited!
+        🔥 <span id="excitedCount" aria-live="polite">0</span> people are excited!
     </p>
+
+    <?php include './includes/random_recommendation.php'; ?>
+
 
 <script>
     window.onload = function () {

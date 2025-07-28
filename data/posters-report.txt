@@ -1,0 +1,28 @@
+PickMyAnime – Poster Import Report
+========================================
+
+Downloaded: 0
+Skipped (exists): 19
+Used Fallback: 2
+
+✅ Skipped: K-On! (exists)
+✅ Skipped: Barakamon (exists)
+✅ Skipped: Nichijou (exists)
+✅ Skipped: Clannad: After Story (exists)
+✅ Skipped: Your Lie in April (exists)
+🛑 Used default: Anohana: The Flower We Saw That Day
+✅ Skipped: Attack on Titan (exists)
+🔁 Fallback to existing: Akudama Drive -> akudama-drive.jpg
+✅ Skipped: Dororo (exists)
+🔁 Fallback to existing: Mushishi -> mushishi.jpg
+✅ Skipped: Natsume’s Book of Friends (exists)
+🔁 Fallback to existing: Laid-Back Camp -> laid-back-camp.jpg
+✅ Skipped: Toradora! (exists)
+🛑 Used default: Kaguya-sama: Love is War
+✅ Skipped: Fruits Basket (2019) (exists)
+🔁 Fallback to existing: Jujutsu Kaisen -> jujutsu-kaisen.jpg
+✅ Skipped: My Hero Academia (exists)
+🔁 Fallback to existing: Mob Psycho 100 -> mob-psycho-100.jpg
+✅ Skipped: Steins;Gate (exists)
+🔁 Fallback to existing: Paranoia Agent -> paranoia-agent.jpg
+✅ Skipped: Made in Abyss (exists)

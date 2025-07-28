@@ -2,3 +2,7 @@
   Order allow,deny
   Deny from all
 </Files>
+RewriteEngine On
+
+# Redirect /anime-recommendation/romantic to anime-recommendation.php?mood=romantic
+RewriteRule ^anime-recommendation/([a-zA-Z0-9_-]+)$ anime-recommendation.php?mood=$1 [L,QSA]

@@ -1,0 +1,185 @@
+{
+  "happy": [
+    {
+      "title": "K-On!",
+      "poster": "/data/posters/k-on.jpg",
+      "synopsis": "A group of high school girls start a light music club and discover friendship and joy through music.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/k-on",
+        "Netflix": "https://www.netflix.com/title/70213156"
+      }
+    },
+    {
+      "title": "Barakamon",
+      "poster": "/data/posters/barakamon.jpg",
+      "synopsis": "A calligrapher moves to a remote village and finds inspiration and joy through its quirky inhabitants.",
+      "streaming": {
+        "Funimation": "https://www.funimation.com/shows/barakamon/"
+      }
+    },
+    {
+      "title": "Nichijou",
+      "poster": "/data/posters/nichijou.jpg",
+      "synopsis": "The hilarious and absurd daily lives of high school girls in a world full of unexpected comedy.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/nichijou"
+      }
+    }
+  ],
+  "sad": [
+    {
+      "title": "Clannad: After Story",
+      "poster": "/data/posters/clannad-after-story.jpg",
+      "synopsis": "An emotional journey of love, family, and personal growth that will touch your heart.",
+      "streaming": {
+        "HiDive": "https://www.hidive.com/tv/clannad-after-story"
+      }
+    },
+    {
+      "title": "Your Lie in April",
+      "poster": "/data/posters/your-lie-in-april.jpg",
+      "synopsis": "A piano prodigy rediscovers music and life after meeting a spirited violinist.",
+      "streaming": {
+        "Netflix": "https://www.netflix.com/title/80062226"
+      }
+    },
+    {
+      "title": "Anohana: The Flower We Saw That Day",
+      "poster": "/data/posters/default.jpg",
+      "synopsis": "A group of childhood friends confront past grief after a ghost from their past appears.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/anohana"
+      }
+    }
+  ],
+  "angry": [
+    {
+      "title": "Attack on Titan",
+      "poster": "/data/posters/attack-on-titan.jpg",
+      "synopsis": "Humanity fights for survival against monstrous Titans in a brutal, dystopian world.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/attack-on-titan"
+      }
+    },
+    {
+      "title": "Akudama Drive",
+      "poster": "/data/posters/akudama-drive.jpg",
+      "synopsis": "A group of criminals carry out dangerous missions in a dark cyberpunk society.",
+      "streaming": {
+        "Funimation": "https://www.funimation.com/shows/akudama-drive/"
+      }
+    },
+    {
+      "title": "Dororo",
+      "poster": "/data/posters/dororo.jpg",
+      "synopsis": "A young man hunts demons who stole his body parts — with a child thief at his side.",
+      "streaming": {
+        "Amazon Prime": "https://www.amazon.com/Dororo/dp/B07MVHRF84"
+      }
+    }
+  ],
+  "chill": [
+    {
+      "title": "Mushishi",
+      "poster": "/data/posters/mushishi.jpg",
+      "synopsis": "A quiet wanderer explores supernatural phenomena in serene natural landscapes.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/mushishi"
+      }
+    },
+    {
+      "title": "Natsume’s Book of Friends",
+      "poster": "/data/posters/natsume’s-book-of-friends.jpg",
+      "synopsis": "A boy who sees spirits tries to release them from his grandmother’s magical notebook.",
+      "streaming": {
+        "HiDive": "https://www.hidive.com/tv/natsumes-book-of-friends"
+      }
+    },
+    {
+      "title": "Laid-Back Camp",
+      "poster": "/data/posters/laid-back-camp.jpg",
+      "synopsis": "High school girls explore nature and friendship through peaceful camping trips.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/laid-back-camp"
+      }
+    }
+  ],
+  "romantic": [
+    {
+      "title": "Toradora!",
+      "poster": "/data/posters/toradora.jpg",
+      "synopsis": "Two unlikely classmates team up to help each other confess their crushes — and find love themselves.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/toradora"
+      }
+    },
+    {
+      "title": "Kaguya-sama: Love is War",
+      "poster": "/data/posters/default.jpg",
+      "synopsis": "Two brilliant student council members are in love — but refuse to confess first.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/kaguya-sama-love-is-war"
+      }
+    },
+    {
+      "title": "Fruits Basket (2019)",
+      "poster": "/data/posters/fruits-basket-(2019).jpg",
+      "synopsis": "A kind girl changes the lives of a cursed family who transform into zodiac animals.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/fruits-basket"
+      }
+    }
+  ],
+  "hyped": [
+    {
+      "title": "Jujutsu Kaisen",
+      "poster": "/data/posters/jujutsu-kaisen.jpg",
+      "synopsis": "A high school student joins a secret society of sorcerers to fight cursed spirits.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/jujutsu-kaisen"
+      }
+    },
+    {
+      "title": "My Hero Academia",
+      "poster": "/data/posters/my-hero-academia.jpg",
+      "synopsis": "In a world where most people have powers, one boy dreams of becoming a true hero.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/my-hero-academia"
+      }
+    },
+    {
+      "title": "Mob Psycho 100",
+      "poster": "/data/posters/mob-psycho-100.jpg",
+      "synopsis": "A powerful psychic tries to live a normal life while battling supernatural threats.",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/mob-psycho-100"
+      }
+    }
+  ],
+  "curious": [
+    {
+      "title": "Steins;Gate",
+      "poster": "/data/posters/steins;gate.jpg",
+      "synopsis": "A self-proclaimed mad scientist accidentally invents time travel — with dangerous consequences.",
+      "streaming": {
+        "Funimation": "https://www.funimation.com/shows/steinsgate/"
+      }
+    },
+    {
+      "title": "Paranoia Agent",
+      "poster": "/data/posters/paranoia-agent.jpg",
+      "synopsis": "A strange assailant causes mass hysteria in Tokyo — but what's really going on?",
+      "streaming": {
+        "Crunchyroll": "https://www.crunchyroll.com/paranoia-agent"
+      }
+    },
+    {
+      "title": "Made in Abyss",
+      "poster": "/data/posters/made-in-abyss.jpg",
+      "synopsis": "A girl and her robot companion journey into a mysterious abyss full of deadly wonders.",
+      "streaming": {
+        "HiDive": "https://www.hidive.com/tv/made-in-abyss"
+      }
+    }
+  ]
+}

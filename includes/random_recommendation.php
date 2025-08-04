@@ -76,6 +76,10 @@ $poster    = $anime['images']['jpg']['image_url'] ?? null;
 $year      = $anime['year'] ?? null;
 $score     = $anime['score'] ?? null;
 $mal_id    = $anime['mal_id'] ?? null;
+// Get genres from Jikan API
+$genres = $anime['genres'] ?? [];
+$genreNames = array_map(fn($g) => $g['name'], $genres);
+$genreString = implode(', ', $genreNames);
 $source    = 'jikan';
 
 $posterLocalPath = null;
@@ -137,10 +141,11 @@ $checkStmt->close();
 if (!$existing) {
     $insertStmt = $DBcon->prepare(
         'INSERT INTO anime_recommendations 
-         (title, synopsis, poster, streaming, created_at, external_id, source, year, score)
-         VALUES (?, ?, ?, ?, NOW(), ?, ?, ?, ?)'
+     (title, synopsis, poster, streaming, created_at, external_id, source, year, score, genres)
+     VALUES (?, ?, ?, ?, NOW(), ?, ?, ?, ?, ?)'
     );
-    $insertStmt->bind_param('ssssisid', $title, $synopsis, $posterLocalPath, $streaming, $mal_id, $source, $year, $score);
+    $insertStmt->bind_param('ssssisidss', $title, $synopsis, $posterLocalPath, $streaming, $mal_id, $source, $year, $score, $genreString);
+
     $insertStmt->execute();
     $recId = $DBcon->insert_id;
     $insertStmt->close();
@@ -167,6 +172,9 @@ if (!$existing) {
     }
     if (empty($existing['streaming']) && $streaming) {
         $updates[] = 'streaming=?'; $params[] = $streaming; $types .= 's';
+    }
+    if (empty($existing['genres']) && $genreString) {
+        $updates[] = 'genres=?'; $params[] = $genreString; $types .= 's';
     }
 
     if (!empty($updates)) {

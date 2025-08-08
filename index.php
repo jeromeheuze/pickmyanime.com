@@ -51,6 +51,9 @@ $genreRows = [
             padding: 4rem 1rem;
             text-align: center;
         }
+        a:hover {
+            text-decoration: underline;
+        }
         h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
@@ -187,87 +190,18 @@ $genreRows = [
     <p id="confirmationMessage" class="fade-in" style="margin-top: 1rem; color: #00ff99; font-weight: bold;">
         🎉 Thanks for your excitement! We'll keep you updated.
     </p>
-    <p id="excitementBadge" style="margin-top: 2rem; font-size: 1rem; color: #ffaa33;">
+    <p id="excitementBadge" style="margin-top: 1rem; font-size: 1rem; color: #ffaa33;">
         🔥 <span id="excitedCount" aria-live="polite">0</span> people are excited!
     </p>
 
+    <!-- Link to Genres -->
+    <p style="margin-top: 2rem;">
+        <a href="/genres.php" style="color: #ffcc66; font-weight: bold; text-decoration: none;">
+            🌟 Browse All Genres
+        </a>
+    </p>
+
     <?php //include './includes/random_recommendation.php'; ?>
-
-    <style>
-        .genre-section {
-            width: 100%;
-            max-width: 1000px;
-            margin: 3rem auto;
-            text-align: left;
-        }
-        .genre-title {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .genre-row {
-            display: flex;
-            overflow-x: auto;
-            gap: 1rem;
-            padding-bottom: 1rem;
-        }
-        .anime-card {
-            flex: 0 0 auto;
-            width: 160px;
-            background: #1a1a1a;
-            border-radius: 8px;
-            overflow: hidden;
-            text-align: center;
-            color: #fff;
-            transition: transform 0.2s ease;
-        }
-
-        .anime-card:hover {
-            transform: scale(1.05);
-        }
-        .anime-card img {
-            height: 240px;
-            width: auto;
-            display: block;
-            margin: 0 auto;
-            object-fit: cover;
-            border-bottom: 1px solid #333;
-        }
-        .anime-card p {
-            font-size: 0.85rem;
-            padding: 0.5rem;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .lazy-blur {
-            filter: blur(10px);
-            transition: filter 0.6s ease;
-            will-change: filter;
-        }
-        .lazy-blur.loaded {
-            filter: blur(0);
-        }
-    </style>
-
-    <?php foreach ($genreRows as $genre => $animeList): ?>
-        <div class="genre-section">
-            <h2 class="genre-title"><?= htmlspecialchars($genre) ?></h2>
-            <div class="genre-row">
-                <?php foreach ($animeList as $anime): ?>
-                    <div class="anime-card">
-                        <img
-                                src="/assets/img/placeholder-blur.jpg"
-                                data-src="<?= htmlspecialchars($anime['poster']) ?>"
-                                alt="<?= htmlspecialchars($anime['title']) ?>"
-                                class="lazy-blur"
-                                loading="lazy">
-                        <p><?= htmlspecialchars($anime['title']) ?></p>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    <?php endforeach; ?>
-
 
     <script>
     document.addEventListener("DOMContentLoaded", () => {
